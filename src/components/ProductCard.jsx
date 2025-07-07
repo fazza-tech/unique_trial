@@ -3,10 +3,10 @@ const ProductCard = ({product}) => {
    const {image,title,price} = product
 
     return(
-        <div className="bg-white shadow rounded-xl p-4 flex flex-col">
+        <div className="flex flex-col bg-white shadow rounded p-4 ">
             <img className="w-48 h-48 object-contain mx-auto" src={image} alt="" />
-            <h2>{title}</h2>
-            <p>{price}</p>
+            <h2 className="font-semibold">{title}</h2>
+            <p className="font-bold">{"$"+price}</p>
         </div>
     )
 }
